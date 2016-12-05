@@ -45,6 +45,26 @@ body {
     flex: 1;
 }
 
+.ui.divided.items>.item {
+  padding: 1em;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  border-radius: 10px;
+}
+
+.ui.divided.items>.item:hover {
+  background: rgba(120, 61, 156, 0.6);
+}
+
+.ui.divided.items>.item:first-child {
+  padding: 1em !important;
+}
+
+.ui.divided.items>.item:last-child {
+  padding: 1em !important;
+}
+
+
 /*MOBILE*/
 @media (max-width: 700px) {
     .nav:not(.shown), .info:not(.shown) {

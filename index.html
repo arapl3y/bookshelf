@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>book shelf</title>
+		<title>Bookshelf</title>
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
 		<link rel="stylesheet" href="css/app.css">
 	</head>
@@ -11,53 +11,54 @@
 		<div class="app">
 			<div class="nav shown">
 				<div class="title">
-					<div class="ui large header">Podsling</div>
+					<div class="ui large header">Bookshelf</div>
 				</div>
 				<div class="filters">
 					<i class="filter icon"></i>
 				</div>
 				<div class="ui divided items">
-					<div class="item">
+					<div id="hackers" class="item">
 						<div class="ui tiny image">
-							<img src="//placehold.it/200x200">
+							<img src="img/hackers.jpg">
 						</div>
 						<div class="middle aligned content">
-							Content A
+							<p><span id="firstTitle">Hackers</span>: Heroes of the Computer Revolution</p>
+							<p class="firstAuthor">Steven Levy</p>
+							<p class="date">1984</p>
 						</div>
 					</div>
-					<div class="item">
+					<div id="twitter" class="item">
 						<div class="ui tiny image">
-							<img src="//placehold.it/200x200">
+							<img src="img/twitter.jpg">
 						</div>
 						<div class="middle aligned content">
-							Content B
+							<p class="secondTitle">Hatching Twitter</p>
+							<p class="secondAuthor">Nick Bilton</p>
+							<p class="date">2013</p>
 						</div>
 					</div>
-					<div class="item">
+					<div id="grit" class="item">
 						<div class="ui tiny image">
-							<img src="//placehold.it/200x200">
+							<img src="img/grit.jpg">
 						</div>
 						<div class="middle aligned content">
-							Content C
+							<p class="thirdTitle">Grit: The Power of Passion and Perseverance</p>
+							<p class="thirdAuthor">Angela Duckworth</p>
+							<p class="date">2016</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="info">
 				<div class="title">
-					<div class="ui large header">An Awesome Book Title</div>
+					<div id="addTitle" class="ui large header">Select a title</div>
+				</div>
+				<div id="addDescription" class="info">
 				</div>
 			</div>
 		</div>
 		<!-- SCRIPT -->
-		<script src="//unpkg.com/vue/dist/vue.js"></script>
-		<script type="text/javascript">
-		var app = new Vue({
-			el: '.app',
-			data: {
-				message: 'Hello Vue!'
-			}
-		});
-		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>
